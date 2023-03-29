@@ -19,6 +19,8 @@ const promise3 = new Promise((resolve,reject) => {
 		resolve(time);
 	},time*1000)
 })
+const loadingRow = document.getElementById("loading");
+loadingRow.parentNode.removeChild(loadingRow);
 const tbody=document.getElementById('output');
 const promises=[promise1,promise2,promise3];
 
